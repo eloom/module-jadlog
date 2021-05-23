@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="carriers" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+			<group id="eloom_jadlog" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Jadlog - eloom.dev</label>
+				<field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="title" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Title</label>
+				</field>
+				<field id="showmethod" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Method if Not Applicable</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<frontend_class>shipping-skip-hide</frontend_class>
+				</field>
+				<field id="sort_order" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Sort Order</label>
+				</field>
+
+				<field id="gm" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>GetModal</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="gm_key" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>API Key</label>
+					<validate>required-entry</validate>
+				</field>
+				<field id="gm_token" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>API Token</label>
+					<validate>required-entry</validate>
+				</field>
+
+				<field id="jadlog" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Jadlog</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="jl_user" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>User</label>
+					<validate>required-entry</validate>
+				</field>
+				<field id="jl_password" translate="label" type="text" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Password</label>
+					<validate>required-entry</validate>
+				</field>
+				<field id="jl_client" translate="label" type="text" sortOrder="33" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Client Code</label>
+					<validate>required-entry</validate>
+				</field>
+				<field id="jl_cnpj" translate="label" type="text" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>CNPJ</label>
+					<validate>required-entry</validate>
+				</field>
+
+				<field id="servicos" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Services</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="servico_codigo" translate="label" type="multiselect" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label><![CDATA[Services]]></label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\Servicos</source_model>
+				</field>
+				<field id="servico_gratuito" translate="label" type="select" sortOrder="42" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label><![CDATA[Serviço com entrega gratuita]]></label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\ServicosFree</source_model>
+				</field>
+				<field id="servico_gratuito_desconto" translate="label" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label><![CDATA[Valor máximo p/ frete grátis]]></label>
+				</field>
+
+				<field id="dimensoes" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Medidas</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="default_height" translate="label" type="text" sortOrder="51" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label><![CDATA[Altura padrão (cm)]]></label>
+					<validate>required-entry validate-digits</validate>
+				</field>
+				<field id="default_width" translate="label" type="text" sortOrder="52" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label><![CDATA[Largura padrão (cm)]]></label>
+					<validate>required-entry validate-digits</validate>
+				</field>
+				<field id="default_length" translate="label" type="text" sortOrder="53" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label><![CDATA[Comprimento padrão (cm)]]></label>
+					<validate>required-entry validate-digits</validate>
+				</field>
+
+				<field id="prazos" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Prazos</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="prazo_entrega" translate="label" type="select" sortOrder="61" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label><![CDATA[Exibir prazo de entrega]]></label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="mensagem_prazo_entrega" translate="label" type="text" sortOrder="62" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Mensagem do prazo de entrega</label>
+				</field>
+				<field id="prazo_extra" translate="label" type="text" sortOrder="63" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Prazo extra</label>
+					<validate>required-entry validate-digits</validate>
+				</field>
+
+				<field id="taxas" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Taxas</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="taxa_extra" translate="label" type="select" sortOrder="71" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Taxa Extra</label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\TaxaExtra</source_model>
+				</field>
+				<field id="taxa_extra_valor" translate="label" type="text" sortOrder="72" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Valor/Percentual da Taxa Extra</label>
+					<validate>required-entry validate-digits</validate>
+				</field>
+
+				<field id="fields" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Mapeamento de atributos</label>
+					<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="width" translate="label" type="select" sortOrder="81" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Largura</label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\Attributes</source_model>
+				</field>
+				<field id="height" translate="label" type="select" sortOrder="82" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Altura</label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\Attributes</source_model>
+				</field>
+				<field id="length" translate="label" type="select" sortOrder="83" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Comprimento</label>
+					<source_model>Eloom\Jadlog\Block\Adminhtml\Config\Source\Attributes</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

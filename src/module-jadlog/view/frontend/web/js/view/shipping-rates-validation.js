@@ -1,0 +1,1 @@
+define(["uiComponent","Magento_Checkout/js/model/shipping-rates-validator","Magento_Checkout/js/model/shipping-rates-validation-rules","Eloom_Jadlog/js/model/shipping-rates-validator","Eloom_Jadlog/js/model/shipping-rates-validation-rules"],function(a,b,c,d,e){b.registerValidator("eloom_jadlog",d);c.registerRules("eloom_jadlog",e);return a});

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<carriers>
+			<eloom_jadlog>
+				<model>Eloom\Jadlog\Model\Carrier</model>
+				<active>0</active>
+				<title>Jadlog</title>
+				<showmethod>1</showmethod>
+				<servico_codigo>jadlog_package</servico_codigo>
+				<servico_gratuito>N</servico_gratuito>
+				<servico_gratuito_desconto>0</servico_gratuito_desconto>
+				<dimensoes_opcao>gr</dimensoes_opcao>
+				<default_height>2</default_height>
+				<default_width>11</default_width>
+				<default_length>16</default_length>
+				<prazo_entrega>1</prazo_entrega>
+				<mensagem_prazo_entrega><![CDATA[%s - Até %d dia(s) úteis]]></mensagem_prazo_entrega>
+				<prazo_extra>0</prazo_extra>
+				<width>volume_largura</width>
+				<height>volume_altura</height>
+				<length>volume_comprimento</length>
+				<weight>weight</weight>
+				<taxa_extra>1</taxa_extra>
+				<taxa_extra_valor>20</taxa_extra_valor>
+				<sort_order>16</sort_order>
+			</eloom_jadlog>
+		</carriers>
+	</default>
+</config>

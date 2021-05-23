@@ -1,0 +1,40 @@
+{
+  "name": "eloom/module-jadlog",
+  "description": "Frete com Jadlog + Getmodal para Magento 2",
+  "homepage": "https://www.eloom.com.br/jadlog",
+  "keywords": [
+    "magento",
+    "magento2",
+    "shipping",
+    "jadlog",
+    "getmodal",
+    "riaworks",
+    "ecommerce",
+    "eloom"
+  ],
+  "authors": [
+    {
+      "name": "eloom",
+      "email": "contato@eloom.com.br"
+    }
+  ],
+  "support": {
+    "email": "contato@eloom.com.br"
+  },
+  "require": {
+    "php": "~7.3|~7.4",
+    "magento/framework": "103.0.*"
+  },
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "src/module-jadlog/registration.php"
+    ],
+    "psr-4": {
+      "Eloom\\Jadlog\\": "src/module-jadlog"
+    }
+  }
+}
