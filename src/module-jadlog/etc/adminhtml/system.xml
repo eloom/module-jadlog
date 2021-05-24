@@ -3,7 +3,7 @@
 	<system>
 		<section id="carriers" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
 			<group id="eloom_jadlog" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
-				<label>Jadlog - eloom.dev</label>
+				<label>Jadlog - Frete</label>
 				<field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Enabled</label>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
