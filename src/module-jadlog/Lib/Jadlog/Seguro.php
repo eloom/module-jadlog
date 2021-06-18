@@ -3,9 +3,9 @@
 * 
 * Frete com Jadlog para Magento 2
 * 
-* @category     Eloom
+* @category     Ã©loom
 * @package      Modulo Frete com Jadlog
-* @copyright    Copyright (c) 2020 eloom (https://www.eloom.com.br)
+* @copyright    Copyright (c) 2021 eloom (https://eloom.tech)
 * @version      1.0.0
 * @license      https://opensource.org/licenses/OSL-3.0
 * @license      https://opensource.org/licenses/AFL-3.0
